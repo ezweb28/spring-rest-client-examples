@@ -66,4 +66,8 @@ public class Address implements Serializable
         this.additionalProperties.put(name, value);
     }
 
+    @Override
+    public String toString() {
+        return street + " " + suite + ", " + city + ", " + zipcode;
+    }
 }
